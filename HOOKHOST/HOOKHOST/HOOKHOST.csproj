@@ -10,7 +10,7 @@
     <AssemblyName>HOOKHOST</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <ApplicationIcon>..\..\..\..\..\source\repos\WXBDSF\WXBDSF\2.ico</ApplicationIcon>
+    <ApplicationIcon>2.ico</ApplicationIcon>
     <NoWin32Manifest>False</NoWin32Manifest>
     <SignAssembly>False</SignAssembly>
     <DelaySign>False</DelaySign>
