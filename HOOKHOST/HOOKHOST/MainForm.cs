@@ -64,7 +64,7 @@ namespace HOOKHOST
         // ve 课堂配置文件路径
         string ve2= Environment.GetEnvironmentVariable("LocalAppData") + "\\Winupon\\Vizpower\\logintool.ini";
         // ve2 登陆配置文件路径
-        string pwxb = "C:\\Program Files (x86)\\wxb\\iMeeting.exe#C:\\Program Files\\wxb\\iMeeting.exe#D:\\Program Files (x86)\\wxb\\iMeeting.exe#D:\\Program Files\\wxb\\iMeeting.exe#E:\\Program Files\\wxb\\iMeeting.exe#E:\\Program Files (x86)\\wxb\\iMeeting.exe#D:\\iMeeting.exe#D:\\wxb\\iMeeting.exe#C:\\wxb\\iMeeting.exe#F:\\Program Files\\wxb\\iMeeting.exe#F:\\Program Files (x86)\\wxb\\iMeeting.exe";
+        string pwxb = @"C:\Program Files (x86)\wxb\iMeeting2.exe#C:\Program Files (x86)\wxb\iMeeting.exe#C:\Program Files\wxb\iMeeting2.exe#C:\Program Files\wxb\iMeeting.exe#D:\Program Files (x86)\wxb\iMeeting2.exe#D:\Program Files (x86)\wxb\iMeeting.exe#D:\Program Files\wxb\iMeeting2.exe#D:\Program Files\wxb\iMeeting.exe#E:\Program Files\wxb\iMeeting2.exe#E:\Program Files\wxb\iMeeting.exe#E:\Program Files (x86)\wxb\iMeeting2.exe#E:\Program Files (x86)\wxb\iMeeting.exe#D:\iMeeting2.exe#D:\iMeeting.exe#D:\wxb\iMeeting2.exe#D:\wxb\iMeeting.exe#C:\wxb\iMeeting2.exe#C:\wxb\iMeeting.exe#F:\Program Files\wxb\iMeeting2.exe#F:\Program Files\wxb\iMeeting.exe#F:\Program Files (x86)\wxb\iMeeting2.exe#F:\Program Files (x86)\wxb\iMeeting.exe";
         //pwxb 以“#”分割的一段文本 储存了无限宝目录的可能值
         string xmwb = "AllowHLS#AutoRecordPrompt#CameraRemind#CameraSnap#ClassAutoLock#ClassNoteURL#ClientType#Course-Big-PictureUrl#Course-Total-time#DocURL#EastimateTime#EditTestStdAns#EvaluateURL#FeedbackURL#GreenScreenURL#IPVCamera#MeetCurrTime#MeetId#MeetStartTime#Meeting-AddTime#Meeting-BeforeTime#Meeting-Chairman#Meeting-Duration#Meeting-Project#Meeting-Subject#MeetingQuitURL#MultiMeeting#MultiVideoChannels#NDConf#NeedSSR#NetDiskNotifyURL#NetDiskProtocol#NetDiskUploadURL#NetDiskUserName#NetDiskUserPasswd#NickName#NoAppShare#NoNetDisk#NoPlayMedia#Port#PresidentKey2#ProjectName#ProxyAllocType#QRCodeBaseURL#RestVodURL#SensitiveWordsURL#ServerIP#ShowUserCount#SnapUploadURL#StuClass#StuPhone#StuSchool#StudentDetailURL#TeacherOverviewURL#TestResultURL#VerifyKey#VideoQualityLevel#VoteResultURL#WinAppTitle#exeurl#listenType#signupCount#timesId#updatedirurl#userId";
         //xmwb 以“#”分割的一段文本 储存了无限宝启动所需的所有参数
@@ -111,19 +111,17 @@ namespace HOOKHOST
             }
             //数组 无限宝目录的可能值
             string[] pwxbs = pwxb.Split('#');
+            //优先查找数组路径
+            foreach (string l in pwxbs) {
+                if (System.IO.File.Exists(l)) {
+                    textBox2.Text = l;
+                    break;
+                }
+            }
             //读取配置文件 的目录
-            if (GetValue("wxbfz", "目录", "", ve) != "")
+            if (textBox2.Text == "" && GetValue("wxbfz", "目录", "", ve) != "")
             {
                 textBox2.Text = GetValue("wxbfz", "目录", "", ve);
-            }
-            else {
-                foreach (string l in pwxbs) {
-                    if (System.IO.File.Exists(l)) {
-                        textBox2.Text = l;
-                        break;
-                    }
-
-                }
             }
             //如果找不到无限宝的目录 用注册表的方法寻找
             if (textBox2.Text == "") {
