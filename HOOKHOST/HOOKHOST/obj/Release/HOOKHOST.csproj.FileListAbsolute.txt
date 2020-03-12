@@ -6,8 +6,10 @@ C:\Users\Sang\Documents\SharpDevelop Projects\HOOKHOST\HOOKHOST\obj\Release\HOOK
 C:\Users\Sang\Documents\SharpDevelop Projects\HOOKHOST\HOOKHOST\obj\Release\HOOKHOST.exe
 C:\Users\Sang\Documents\SharpDevelop Projects\h\HOOKHOST\HOOKHOST\bin\Release\HOOKHOST.exe.config
 C:\Users\Sang\Documents\SharpDevelop Projects\h\HOOKHOST\HOOKHOST\bin\Release\HOOKHOST.exe
-C:\Users\Sang\Documents\SharpDevelop Projects\h\HOOKHOST\HOOKHOST\obj\Release\HOOKHOST.csprojResolveAssemblyReference.cache
 C:\Users\Sang\Documents\SharpDevelop Projects\h\HOOKHOST\HOOKHOST\obj\Release\HOOKHOST.MainForm.resources
 C:\Users\Sang\Documents\SharpDevelop Projects\h\HOOKHOST\HOOKHOST\obj\Release\HOOKHOST.Resources.resources
 C:\Users\Sang\Documents\SharpDevelop Projects\h\HOOKHOST\HOOKHOST\obj\Release\HOOKHOST.csproj.GenerateResource.Cache
 C:\Users\Sang\Documents\SharpDevelop Projects\h\HOOKHOST\HOOKHOST\obj\Release\HOOKHOST.exe
+C:\Users\Sang\Documents\SharpDevelop Projects\h\HOOKHOST\HOOKHOST\obj\Release\HOOKHOST.csprojAssemblyReference.cache
+C:\Users\Sang\Documents\SharpDevelop Projects\h\HOOKHOST\HOOKHOST\obj\Release\HOOKHOST.Login.resources
+C:\Users\Sang\Documents\SharpDevelop Projects\h\HOOKHOST\HOOKHOST\obj\Release\HOOKHOST.csproj.CoreCompileInputs.cache
