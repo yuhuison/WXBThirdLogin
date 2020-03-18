@@ -1,0 +1,44 @@
+﻿<Controls:MetroWindow x:Name="MainWindow" x:Class="WXBWPF.Window1"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+                      Title="无限宝第三方辅助 2.0 @-Bilibili 秋小十 "
+                      Height="512"
+                      Width="672" ShowMaxRestoreButton="False" ResizeMode="CanMinimize" Loaded="MainWindow_Loaded">
+    <Controls:MetroWindow.Resources>
+        <BitmapImage x:Key="ImageSource1" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource=""/>
+    </Controls:MetroWindow.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="38*"/>
+            <ColumnDefinition Width="114*"/>
+            <ColumnDefinition Width="181*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="bg" HorizontalAlignment="Left" Height="190" VerticalAlignment="Top" Width="675" Margin="-3,0,-6,0" Grid.ColumnSpan="3"/>
+        <ListBox x:Name="listbox1" HorizontalAlignment="Left" Height="266" Margin="0,215,0,0" VerticalAlignment="Top" Width="200" Grid.ColumnSpan="2"/>
+        <Label x:Name="label2" Content="当前已经登陆账号：未登陆QAQ" HorizontalAlignment="Left" Height="28" Margin="153,186,0,0" VerticalAlignment="Top" Width="394" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Controls:ToggleSwitch Style="{StaticResource MahApps.Metro.Styles.ToggleSwitch.Win10}" Grid.Column="1" x:Name="checkBox1" Header="解除课堂自动锁定"                               
+                               ContentDirection="RightToLeft" OnLabel="Yes" OffLabel="No" Margin="159,219,306,208" RenderTransformOrigin="0.612,1.056" IsChecked="True" Grid.ColumnSpan="2"/>
+        <Controls:ToggleSwitch Style="{StaticResource MahApps.Metro.Styles.ToggleSwitch.Win10}" Grid.Column="1" x:Name="checkBox3" Header="解除屏蔽词(即将失效)"                               
+            ContentDirection="RightToLeft" OnLabel="Yes" OffLabel="No" Margin="159,278,267,149" IsChecked="True" Grid.ColumnSpan="2"/>
+        <Controls:ToggleSwitch Style="{StaticResource MahApps.Metro.Styles.ToggleSwitch.Win10}" Grid.Column="1" x:Name="checkBox4" Header="解除录屏软件限制"                               
+            ContentDirection="RightToLeft" OnLabel="Yes" OffLabel="No" Margin="159,337,267,90" IsChecked="True" Grid.ColumnSpan="2"/>
+        <Controls:ToggleSwitch Style="{StaticResource MahApps.Metro.Styles.ToggleSwitch.Win10}" Grid.Column="1" x:Name="checkBox2" Header="显示在线人数"                               
+            ContentDirection="RightToLeft" OnLabel="Yes" OffLabel="No" Margin="159,396,267,31" IsChecked="True" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="22" Margin="95,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" TextChanged="TextBox_TextChanged" Grid.Column="2"/>
+        <Label Content="无限宝iMeeting.exe路径" HorizontalAlignment="Left" Height="27" Margin="102,224,0,0" VerticalAlignment="Top" Width="183" Grid.Column="2"/>
+        <CheckBox x:Name="checkBox5" Content="启用强力无比的DLL插件" HorizontalAlignment="Left" Height="29" Margin="95,296,0,0" VerticalAlignment="Top" Width="248" Checked="CheckBox_Checked" FontSize="14" Grid.Column="2" IsEnabledChanged="CheckBox5_IsEnabledChanged"/>
+        <Button x:Name="button2" Content="启动"  HorizontalAlignment="Left" Height="38" Margin="95,413,0,0" VerticalAlignment="Top" Width="88" FontSize="14" Click="Button2_Click" Grid.Column="2"/>
+        <Button Content="刷新当前课程/登陆账号"  HorizontalAlignment="Left" Height="24" Margin="10,186,0,0" VerticalAlignment="Top" Width="190" FontSize="12" Click="Button_Click" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="checkBox5_Copy" Content="本人已知悉并同意" HorizontalAlignment="Left" Height="29" Margin="114,190,0,0" VerticalAlignment="Top" Width="136" Checked="CheckBox_Checked" Grid.Column="2" IsEnabledChanged="CheckBox5_IsEnabledChanged" IsChecked="True" IsEnabled="False"/>
+        <Label Content="免责条款" Grid.Column="2" HorizontalAlignment="Left" Height="27" Margin="236,192,0,0" VerticalAlignment="Top" Width="69" Foreground="#FF4C8FE0" MouseUp="Label_MouseUp" Cursor="Hand"/>
+        <Label x:Name="label4" Content="Log:" Grid.Column="2" HorizontalAlignment="Left" Height="33" Margin="95,372,0,0" VerticalAlignment="Top" Width="237" Foreground="#FF4C8FE0" FontSize="16"/>
+        <Button x:Name="button3" Content="显示插件运行状态"  HorizontalAlignment="Left" Height="38" Margin="196,414,0,0" VerticalAlignment="Top" Width="136" FontSize="14" Click="Button3_Click" Grid.Column="2"/>
+        <Button x:Name="button4" Content="下载"  HorizontalAlignment="Left" Height="29" Margin="283,296,0,0" VerticalAlignment="Top" Width="60" FontSize="14" Grid.Column="2" Click="Button4_Click"/>
+        <Label x:Name="l2" Content="插件说明" Grid.Column="2" HorizontalAlignment="Left" Height="27" Margin="274,330,0,0" VerticalAlignment="Top" Width="69" Foreground="#FF4C8FE0" Cursor="Hand" MouseUp="L2_MouseUp"/>
+        <Button x:Name="button4_Copy" Content="保存"  HorizontalAlignment="Left" Height="29" Margin="259,222,0,0" VerticalAlignment="Top" Width="60" FontSize="14" Grid.Column="2" Click="Button4_Copy_Click"/>
+        <Label Content="使用教程（出问题先看这个谢谢）" Grid.Column="2" HorizontalAlignment="Left" Height="27" Margin="86,330,0,0" VerticalAlignment="Top" Width="183" Foreground="#FF4C8FE0" MouseUp="Label_MouseUp_1" Cursor="Hand"/>
+        <!-- your content -->
+
+    </Grid>
+</Controls:MetroWindow>
