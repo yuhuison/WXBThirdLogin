@@ -17,3 +17,10 @@ C:\Users\Sang\Documents\SharpDevelop Projects\WXBWPF\WXBWPF\bin\Release\System.W
 C:\Users\Sang\Documents\SharpDevelop Projects\WXBWPF\WXBWPF\obj\Release\WXBWPF_Content.g.cs
 C:\Users\Sang\Documents\SharpDevelop Projects\WXBWPF\WXBWPF\obj\Release\WXBWPF.debug.resources
 C:\Users\Sang\Documents\SharpDevelop Projects\WXBWPF\WXBWPF\obj\Release\WXBWPF.Login.resources
+C:\Users\Sang\Documents\SharpDevelop Projects\WXBWPF\WXBWPF\obj\Release\WXBWPF.wxbsb.resources
+C:\Users\Sang\Documents\SharpDevelop Projects\WXBWPF\WXBWPF\obj\Release\WXBWPF.Form2.resources
+C:\Users\Sang\Documents\SharpDevelop Projects\WXBWPF\WXBWPF\obj\Release\WXBWPF.csproj.CopyComplete
+C:\Users\Sang\Documents\SharpDevelop Projects\WXBWPF\WXBWPF\obj\Release\WXBWPF.exe.manifest
+C:\Users\Sang\Documents\SharpDevelop Projects\WXBWPF\WXBWPF\obj\Release\WXBWPF.application
+C:\Users\Sang\Documents\SharpDevelop Projects\WXBWPF\WXBWPF\bin\Release\WXBWPF.exe.manifest
+C:\Users\Sang\Documents\SharpDevelop Projects\WXBWPF\WXBWPF\bin\Release\WXBWPF.application

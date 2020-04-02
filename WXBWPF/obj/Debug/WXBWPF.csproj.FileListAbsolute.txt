@@ -19,3 +19,6 @@ C:\Users\Sang\Documents\SharpDevelop Projects\WXBWPF\WXBWPF\obj\Debug\WXBWPF_Con
 C:\Users\Sang\Documents\SharpDevelop Projects\WXBWPF\WXBWPF\bin\Debug\ControlzEx.dll
 C:\Users\Sang\Documents\SharpDevelop Projects\WXBWPF\WXBWPF\bin\Debug\MahApps.Metro.dll
 C:\Users\Sang\Documents\SharpDevelop Projects\WXBWPF\WXBWPF\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Sang\Documents\SharpDevelop Projects\WXBWPF\WXBWPF\obj\Debug\WXBWPF.Form2.resources
+C:\Users\Sang\Documents\SharpDevelop Projects\WXBWPF\WXBWPF\obj\Debug\WXBWPF.wxbsb.resources
+C:\Users\Sang\Documents\SharpDevelop Projects\WXBWPF\WXBWPF\obj\Debug\WXBWPF.csproj.CopyComplete

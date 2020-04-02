@@ -33,9 +33,16 @@ namespace WXBWPF
         public string ve2;
         public Window1 mf;
         public string string2MD5(string a) {
-            return MD5.MDString(a);
-            
-
+            if (checkBox1.Checked)
+            {
+                byte[] result = Encoding.UTF8.GetBytes(a);
+                System.Security.Cryptography.MD5 md5 = new System.Security.Cryptography.MD5CryptoServiceProvider();
+                byte[] output = md5.ComputeHash(result);
+                return BitConverter.ToString(output).Replace("-", "");
+            }
+            else {
+                return MD5.MDString(a);
+            }
         }
         private void Login_Load(object sender, EventArgs e)
         {
@@ -115,13 +122,22 @@ namespace WXBWPF
             string salt = GetTimeStamp();
             string pwd = string2MD5(username + password + salt + "WINUPON");
             string pwd2 = string2MD5(username + string2MD5(password).ToLower() + salt + "WINUPON");
-            string url = "http://" + website + "/courseList.action?uid=" + username;
+            string url = "";
+            if (checkBox2.Checked)
+            {
+                url = "https://" + website + "/courseList.action?uid=" + username;
+            }
+            else {
+                url = "http://" + website + "/courseList.action?uid=" + username;
+            }
+            
             url = url + "&pwd=" + pwd.ToLower() + "&pwd2=" + pwd2.ToLower() + "&salt=" + salt + "&callfrom=vplogintool";
-
+            //MessageBox.Show(url);
             string iRet = "";
             try
             {
                 iRet = client.DownloadString(url);
+               // MessageBox.Show(iRet);
             }
             catch
             {
@@ -146,7 +162,7 @@ namespace WXBWPF
             }
             else
             {
-                MessageBox.Show("登陆错误！");
+                MessageBox.Show("登陆错误！检查用户名 密码 网址,如果依旧错误请尝试 勾选或者取消勾选 那两个选择框");
             }
         }
     }
